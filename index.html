@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/css/js/script.js"></script>
+    <title>Condiciones-Js</title>
+  </head>
+  <body>
+    <section class="border-section">
+      <h1>Agregar Stickers</h1>
+      <img
+        src="./assets/img/stitch enamorado.webp"
+        alt="imagen de 2 stitch uno azul otro rosado con dos corazones"
+      />
+    </section>
+
+    <section class="sticker-section">
+      <h1>Pedido de Stickers</h1>
+      <p>(Máximo 10 stickers)</p>
+      <div class="cards-container">
+        <div class="sticker-card">
+          <img
+            src="./assets/img/stitch cariñoso.jpg"
+            alt="imagen de stitch cariñoso abrazando un peluche"
+          />
+          <input id="quantity01" type="number" min="0" />
+        </div>
+        <div class="sticker-card">
+          <img
+            src="./assets/img/stitch bebe.webp"
+            alt="imagen de un stitch bebe con un chupete, stitch color rosado "
+          />
+          <input id="quantity02" type="number" min="0" />
+        </div>
+        <div class="sticker-card">
+          <img
+            src="./assets/img/stitch1.jpg"
+            alt="imagen de stitch mirando a la camara con 2 corazones sobre su cabeza"
+          />
+          <input id="quantity03" type="number" min="0" />
+        </div>
+      </div>
+      <button onclick="sendOrder()" id="order-btn">Pedir</button>
+      <p id="alert-msj"></p>
+    </section>
+
+    <section class="password-section">
+      <h1>Ingrese Contraseña</h1>
+      <div class="digit-box">
+        <select name="digit01" id="digit01">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <select name="digit02" id="digit02">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <select name="digit03" id="digit03">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+      <button onclick="sendPassword()" id="password-btn">Ingresar</button>
+      <p id="password-msj"></p>
+    </section>
+  </body>
+</html>

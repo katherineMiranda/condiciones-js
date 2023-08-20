@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section {
+  padding: 2rem;
+  background-color: #ed85db;
+  display: flex;
+  border-bottom: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.border-section img {
+  width: 300px;
+  height: 300px;
+}
+
+.sticker-section .cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sticker-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sticker-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.sticker-card input {
+  width: 50px;
+}
+
+button {
+  padding: 0.4rem;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  border: 2px solid #ab4689;
+  color: #d64bba;
+}
+
+input,
+select {
+  padding: 0.3rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.digit-box {
+  display: flex;
+  gap: 0.5rem;
+}
